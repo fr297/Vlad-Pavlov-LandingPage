@@ -1,16 +1,14 @@
 .portfolio {
-  min-height: 700px;
+  max-height: 900px;
   background: #1e1e1e;
 }
 
 .portfolio .container {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
-  gap: 45px;
-  justify-content: center;
-  height: 1000px;
-  padding-top: 45px;
-  padding-bottom: 80px;
+  padding: 40px 0 0 0;
 }
 
 .portfolio__title {
@@ -37,16 +35,13 @@
   color: #ffffff;
   background-color: none;
   opacity: 0;
-  tab-index: 0;
   cursor: pointer;
   a {
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 18px;
     font-weight: 800;
     text-align: center;
-    margin: 40px 0 0 0;
     padding: 0 20px;
     &:hover {
       color: #ff8a00;
@@ -55,7 +50,6 @@
 }
 
 .slider__item img {
-  margin: auto;
   display: block;
 }
 
@@ -113,15 +107,22 @@
   background: url("../img/svg/slider-arrow.svg") no-repeat center;
 }
 
-.portfolio__item-title,
 .portfolio__desc {
   padding: 0 20px;
   font-size: 20px;
   line-height: 25px;
 }
+.portfolio__subtitle {
+  width: fit-content;
+  p {
+    text-align: left;
+    font-size: 20px;
+    padding: 0 20px;
+  }
+}
 
 .portfolio__desc {
-  margin-top: 40px;
+  margin: 0;
 }
 
 .animated .slider__item {
@@ -180,12 +181,6 @@
     background-color: none;
     max-width: 100%;
     padding: 15px 0;
-  }
-
-  .slider__item:nth-child(7) img {
-    width: 40%;
-    max-width: 140px;
-    height: auto;
   }
 
   .slider__control {

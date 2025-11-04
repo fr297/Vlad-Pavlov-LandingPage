@@ -65,6 +65,22 @@
   transform: translateY(0);
   transition: all 0.5s ease;
 }
+.greetings__title-underline {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+  color: black;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 5px;
+    background-color: #ff961b;
+    left: 0;
+    bottom: -10px;
+  }
+}
 
 .greetings__title {
   font-style: normal;
@@ -75,7 +91,12 @@
   text-transform: uppercase;
   transform: translateY(100px);
   opacity: 0;
+  margin: 25px 0 15px 0;
+  color: black;
   transition: all 0.5s ease;
+  .greetings__title-accent {
+    color: #ffaa00;
+  }
 }
 
 .greetings__title.onload {
@@ -95,10 +116,6 @@
   transform: translateY(0px);
   opacity: 1;
   transition: all 0.5s ease;
-}
-
-.greetings__title-accent {
-  color: #ff961b;
 }
 
 .greetings__pic-wrap {
