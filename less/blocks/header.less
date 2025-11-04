@@ -54,6 +54,26 @@
   transition: all 0.1s ease;
   cursor: pointer;
 }
+.header-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #202020;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  &:hover {
+    p {
+      color: #ff8a00;
+    }
+  }
+}
 
 .header__logo {
   display: flex;
@@ -189,7 +209,7 @@
 
   .phone,
   .header__burger-mail {
-    display: block;
+    display: flex;
   }
 
   .header__burger-text {

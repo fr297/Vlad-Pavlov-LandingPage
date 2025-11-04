@@ -106,10 +106,21 @@
 }
 
 .greetings__start-btn {
+  padding: 10px 0;
   transform: translateY(100px);
   opacity: 0;
+  height: fit-content;
+  width: 480px;
   transition: all 0.5s ease;
   font-size: 21px;
+}
+
+@media (max-width: 768px) {
+  .greetings__start-btn {
+    font-size: 18px;
+    width: 300px;
+    padding: 10px 20px;
+  }
 }
 
 .greetings__start-btn.onload {
@@ -126,10 +137,6 @@
 
 .greetings__pic-wrap {
   position: relative;
-}
-
-.greetings__mobile-list {
-  display: none;
 }
 
 .area {
@@ -310,24 +317,9 @@
 
 @media (max-width: 600px) {
   .greetings {
-    height: auto;
+    min-height: 300px;
+    height: 450px;
   }
-
-  .greetings::after {
-    content: "";
-    display: block;
-    height: 45px;
-    background: #1e1e1e;
-    margin-bottom: -1px;
-    z-index: 1;
-    position: relative;
-  }
-
-  .greetings__start-btn {
-    margin-bottom: -25px;
-    z-index: 2;
-  }
-
   .greetings__desc-block {
     height: 100%;
     width: 85%;
@@ -346,42 +338,6 @@
     font-size: 30px;
     line-height: 35px;
     margin: 40px 0 50px;
-  }
-
-  .greetings__mobile-list {
-    display: block;
-    position: relative;
-    padding-left: 20px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 15px;
-    margin-bottom: 65px;
-    transform: translateY(100px);
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-
-  .greetings__mobile-list.onload {
-    transform: translateY(0);
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .greetings__mobile-list::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -25px;
-    width: 2px;
-    height: 150%;
-    background: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(255, 150, 27, 1),
-      transparent
-    );
   }
 
   .greetings__mobile-item:not(:last-child) {

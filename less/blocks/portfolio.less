@@ -3,12 +3,21 @@
   background: #1e1e1e;
 }
 
+@media (max-width: 768px) {
+  .portfolio {
+    max-height: fit-content;
+    .container {
+      height: fit-content;
+    }
+  }
+}
 .portfolio .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 40px 0 0 0;
+  height: 1000px;
 }
 
 .portfolio__title {
