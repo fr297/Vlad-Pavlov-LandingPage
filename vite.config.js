@@ -6,4 +6,5 @@ export default defineConfig({
     outDir: "product", // чтобы сборка шла в папку product, как у тебя было
     emptyOutDir: true,
   },
+  base: "/VLAD-PAVLOV/",
 });
