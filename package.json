@@ -2,6 +2,7 @@
   "name": "static-less-gulp-project",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://github.com/fr297/VLAD-PAVLOV.git",
   "description": "Static site with LESS + Gulp build, JS bundling, and product build output.",
   "scripts": {
     "dev": "vite",
