@@ -1,10 +1,16 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: ".", // если index.html в корне
-  build: {
-    outDir: "dist", // чтобы сборка шла в папку product, как у тебя было
-    emptyOutDir: true,
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true, // нужно для некоторых библиотек Less
+      },
+    },
   },
-  base: "./",
+  build: {
+    outDir: "dist",
+    emptyOutDir: true, // очищает dist перед сборкой
+  },
+  base: "./", // важно для GitHub Pages
 });
