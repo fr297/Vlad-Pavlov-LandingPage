@@ -12,5 +12,5 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true, // очищает dist перед сборкой
   },
-  base: "./", // важно для GitHub Pages
+  base: "/VLAD-PAVLOV/", // важно для GitHub Pages
 });
