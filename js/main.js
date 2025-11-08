@@ -10,3 +10,4 @@ import "./animation.js";
 import "./slider.js";
 import "./form-validation.js";
 import "./goup.js";
+import "../css/style.css";
