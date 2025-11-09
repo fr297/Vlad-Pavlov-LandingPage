@@ -1891,7 +1891,7 @@ input[type="checkbox"]:checked + label::before {
   align-items: center;
   flex-direction: column;
   padding: 40px 0 0 0;
-  height: 1000px;
+  height: 900px;
 }
 .portfolio__title {
   text-align: center;
@@ -1899,6 +1899,7 @@ input[type="checkbox"]:checked + label::before {
   color: #ffffff;
   font-weight: 800;
   font-size: 40px;
+  margin-bottom: 40px;
 }
 .slider {
   position: relative;
@@ -1916,13 +1917,16 @@ input[type="checkbox"]:checked + label::before {
   opacity: 0;
   cursor: pointer;
 }
+.slider__item picture {
+  display: flex;
+  justify-content: center;
+}
 .slider__item a {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 800;
-  text-align: center;
-  padding: 0 20px;
+  text-align: left;
 }
 .slider__item a:hover {
   color: #ff8a00;
