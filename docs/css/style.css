@@ -1872,7 +1872,6 @@ input[type="checkbox"]:checked + label::before {
   display: none;
 }
 .portfolio {
-  max-height: 900px;
   background: #1e1e1e;
 }
 @media (max-width: 768px) {
@@ -2017,7 +2016,8 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 1080px) {
   .portfolio,
   .portfolio .container {
-    height: auto;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .slider__wrapper {
     flex-direction: column;
