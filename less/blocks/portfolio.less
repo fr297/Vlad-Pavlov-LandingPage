@@ -48,15 +48,23 @@
   picture {
     display: flex;
     justify-content: center;
+    transition: all 1s ease;
   }
   a {
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-weight: 800;
     text-align: left;
     &:hover {
       color: #ff8a00;
+      picture {
+        transform: scale(1.1);
+      }
+    }
+    h3 {
+      margin: 40px 0 20px 0;
+      padding: 0 20px;
+      font-weight: 800;
     }
   }
 }
@@ -123,14 +131,7 @@
   padding: 0 20px;
   font-size: 20px;
   line-height: 25px;
-}
-.portfolio__subtitle {
-  width: fit-content;
-  p {
-    text-align: left;
-    font-size: 20px;
-    padding: 0 20px;
-  }
+  font-weight: 500;
 }
 
 .portfolio__desc {
