@@ -1601,10 +1601,6 @@ input[type="checkbox"]:checked + label::before {
   .partners h2 {
     font-size: 30px;
   }
-  .partners__item {
-    width: 110px;
-    height: 55px;
-  }
   .partners__track {
     gap: 28px;
     animation-duration: 45s;
@@ -1673,7 +1669,6 @@ input[type="checkbox"]:checked + label::before {
     width: 85%;
   }
   .partners__item {
-    width: 110px;
     height: 55px;
   }
   .partners__track {
