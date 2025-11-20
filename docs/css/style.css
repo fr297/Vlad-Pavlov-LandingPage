@@ -558,6 +558,19 @@ input[type="checkbox"]:checked + label::before {
   font-weight: 700;
   padding: 0 5px 0 0;
 }
+.en-active-lang {
+  font-weight: 700;
+  padding: 0 5px 0 10px;
+}
+.en-active-lang::after {
+  content: "";
+  width: 3px;
+  height: 16px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
 .ru-active-lang {
   font-weight: 700;
   padding: 0 0 0 10px;
@@ -1668,6 +1681,7 @@ input[type="checkbox"]:checked + label::before {
 .partners__item {
   flex: 0 0 auto;
   height: 70px;
+  max-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
