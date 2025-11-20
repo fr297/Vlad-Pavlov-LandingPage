@@ -138,6 +138,23 @@
   font-weight: 700;
   padding: 0 5px 0 0;
 }
+.ru-active-lang {
+  font-weight: 700;
+  padding: 0 0 0 10px;
+  &::after {
+    content: "";
+    width: 3px;
+    height: 16px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+}
+.active-lang-none {
+  font-weight: 400;
+  padding: 0 7px 0 0;
+}
 
 .header__burger-wrap {
   display: flex;

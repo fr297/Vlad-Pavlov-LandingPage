@@ -558,6 +558,23 @@ input[type="checkbox"]:checked + label::before {
   font-weight: 700;
   padding: 0 5px 0 0;
 }
+.ru-active-lang {
+  font-weight: 700;
+  padding: 0 0 0 10px;
+}
+.ru-active-lang::after {
+  content: "";
+  width: 3px;
+  height: 16px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+.active-lang-none {
+  font-weight: 400;
+  padding: 0 7px 0 0;
+}
 .header__burger-wrap {
   display: flex;
   align-items: center;
@@ -1696,22 +1713,6 @@ input[type="checkbox"]:checked + label::before {
   }
   .favbet {
     width: 300px;
-  }
-  .nature {
-    transform: scale(1.3);
-    margin: 0 20px;
-  }
-  .galicia {
-    transform: scale(1.5);
-    margin: 0 20px;
-  }
-  .footbik {
-    transform: scale(1.5);
-    margin: 0 15px;
-  }
-  .hostels {
-    transform: scale(1.25);
-    margin: 0 12px;
   }
 }
 .services {
