@@ -1412,7 +1412,7 @@ input[type="checkbox"]:checked + label::before {
   align-items: center;
   position: relative;
   width: 45%;
-  padding: 70px 0 70px 120px;
+  padding: 70px 0 70px 100px;
   background: #ffffff;
   color: black;
   font-weight: 500;
