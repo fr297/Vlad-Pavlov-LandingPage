@@ -327,8 +327,8 @@
         </div>
         <div class="header__lang-wrap">
           <a href="./index.html" class="lang-btn active-lang"> UA </a>
-          <a href="./EnVersion.html" class="lang-btn polish-lang"> ENG </a>
-          <a href="./RuVersion.html" class="lang-btn polish-lang"> RU </a>
+          <a href="./indexEn.html" class="lang-btn polish-lang"> ENG </a>
+          <a href="./indexRu.html" class="lang-btn polish-lang"> RU </a>
         </div>
       </div>
     </header>
@@ -831,7 +831,7 @@
         </div>
       </section>
       <section class="contact container">
-        <form id="contact-form" action="#" method="POST" class="contact-form">
+        <form id="contact-form" class="contact-form">
           <h2>Звʼязатись зі мною</h2>
           <p class="contact-form__desc">
             Заповніть форму, і я звʼяжуся з вами найближчим часом
@@ -880,22 +880,11 @@
           </div>
 
           <div class="contact-form__interactive-wrap">
+            <!-- checkbox оставляем чисто визуально, без логики в JS -->
             <input id="contact-policy" type="checkbox" />
             <label for="contact-policy" class="contact-form__label">
               Я згоден(а) з обробкою моїх персональних даних
             </label>
-
-            <div class="contact-form__file-wrap">
-              <input type="file" id="contact-file" name="file" />
-
-              <label class="contact-form__file-label" for="contact-file">
-                <svg class="contact-form__paperclip">
-                  <use xlink:href="#paperclip"></use>
-                </svg>
-
-                <span>Прикріпити файл</span>
-              </label>
-            </div>
           </div>
 
           <button type="submit" class="start-btn">Відправити</button>
@@ -977,7 +966,7 @@
     <div class="contact-form__wrap">
       <div class="contact-form__bg">
         <div class="container">
-          <form id="popup-form" action="#" method="POST" class="contact-form">
+          <form id="popup-form" class="contact-form">
             <h2>Звʼязатись зі мною</h2>
             <p class="contact-form__desc">
               Заповніть форму, і я звʼяжуся з вами найближчим часом
@@ -988,6 +977,7 @@
                 <input
                   id="modal-name"
                   type="text"
+                  name="user_name"
                   required
                   class="contact-form__text-input"
                 />
@@ -997,6 +987,7 @@
                 <input
                   id="modal-email"
                   type="email"
+                  name="user_email"
                   required
                   class="contact-form__text-input"
                 />
@@ -1006,6 +997,7 @@
                 <input
                   id="modal-phone"
                   type="tel"
+                  name="user_company"
                   required
                   class="contact-form__text-input"
                 />
@@ -1013,7 +1005,7 @@
               <div class="contact-form__textarea-wrap">
                 <label for="modal-add-Data">Додатково</label>
                 <textarea
-                  name="modal-addData"
+                  name="user_message"
                   id="modal-add-Data"
                   cols="30"
                   rows="10"
@@ -1026,21 +1018,6 @@
               <label for="modal-contact-policy" class="contact-form__label">
                 Я згоден(а) з обробкою моїх персональних даних
               </label>
-
-              <div class="contact-form__file-wrap">
-                <input type="file" id="modal-contact-file" name="file" />
-
-                <label
-                  class="contact-form__file-label"
-                  for="modal-contact-file"
-                >
-                  <svg class="contact-form__paperclip">
-                    <use xlink:href="#paperclip"></use>
-                  </svg>
-
-                  <span>Прикріпити файл</span>
-                </label>
-              </div>
             </div>
 
             <button type="submit" class="start-btn">Відправити</button>
@@ -1061,15 +1038,14 @@
         <use xlink:href="#arrow"></use>
       </svg>
     </div>
+    <div id="form-toast" class="form-toast"></div>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
     <script src="./js/onload-animate.js"></script>
-    <script src="./js/file-change.js"></script>
     <script src="./js/open-form.js"></script>
     <script src="./js/change-phone.js"></script>
-    <script src="./js/workers-tabs.js"></script>
     <script src="./js/service-tabs.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/slider.js"></script>

@@ -30,7 +30,7 @@
     checkEmail(modalEmail);
   });
   modalPhone.addEventListener('change', function () {
-    checkEmail(modalPhone);
+    showSuccess(modalPhone)
   });
 
   function showError(input) {
@@ -65,14 +65,10 @@
 
   contactForm.addEventListener('submit',function(e) {
     e.preventDefault();
-    checkRequired([username, email, phone]);
+    checkRequired([username, email]);
     checkEmail(email);
 
-    if (contactFormCheck.checked) {
-      if (checkValidityForm([username, email, phone])) {
-        contactForm.submit();
-      }
-    } else {
+    if (!contactFormCheck.checked) {
       let checkLabel = contactForm.querySelector('.contact-form__label');
       checkLabel.classList.add('invalid');
     }
@@ -81,14 +77,10 @@
 
   modalForm.addEventListener('submit',function(e) {
     e.preventDefault();
-    checkRequired([modalUserName, modalEmail, modalPhone]);
+    checkRequired([modalUserName, modalEmail]);
     checkEmail(modalEmail);
 
-    if (modalFormCheck.checked) {
-      if (checkValidityForm([modalUserName, modalEmail, modalPhone])) {
-        modalForm.submit();
-      }
-    } else {
+    if (!modalFormCheck.checked) {
       let modalCheckLabel = modalForm.querySelector('.contact-form__label');
       modalCheckLabel.classList.add('invalid');
     }
