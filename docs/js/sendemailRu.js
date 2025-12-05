@@ -185,6 +185,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       setSubmitting(true);
 
+      if (username && username.value.trim() !== "") {
+        username.value = `${username.value}  (LANG: Ru)`;
+      }
+
       emailjs
         .sendForm("service_op5a0tm", "template_vyljcpk", form)
         .then(() => {

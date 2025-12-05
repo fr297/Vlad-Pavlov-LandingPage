@@ -255,7 +255,7 @@
 
     <header class="header">
       <div class="header__main-wrap container">
-        <a href="index.html" class="header__logo">
+        <a href="/" class="header__logo">
           <h1 class="logo-title">
             VLAD <span class="orange-logo">PAVLOV</span>
           </h1>
@@ -292,8 +292,8 @@
         </div>
         <div class="header__lang-wrap">
           <a href="./index.html" class="lang-btn active-lang-none"> UA </a>
-          <a href="./indexEn.html" class="lang-btn polish-lang"> ENG </a>
-          <a href="./indexRu.html" class="lang-btn ru-active-lang"> RU </a>
+          <a href="./index-en.html" class="lang-btn polish-lang"> ENG </a>
+          <a href="/" class="lang-btn ru-active-lang"> RU </a>
         </div>
       </div>
     </header>
@@ -804,17 +804,22 @@
         </div>
       </section>
       <section class="contact container">
-        <form id="contact-form" action="#" method="POST" class="contact-form">
+        <form id="contact-form" class="contact-form">
           <h2>Связаться со мной</h2>
           <p class="contact-form__desc">
             Заполните форму, и я свяжусь с вами в ближайшее время
           </p>
-
+          <input
+            type="hidden"
+            name="language_version"
+            value="LanguageVersionRu"
+          />
           <div class="contact-form__input-wrap">
             <div class="contact-form__text-wrap">
               <label for="name">Имя</label>
               <input
                 id="name"
+                name="user_name"
                 type="text"
                 required
                 class="contact-form__text-input"
@@ -825,6 +830,7 @@
               <input
                 id="email"
                 type="email"
+                name="user_email"
                 required
                 class="contact-form__text-input"
               />
@@ -834,6 +840,7 @@
               <input
                 id="phone"
                 type="tel"
+                name="user_company"
                 required
                 class="contact-form__text-input"
               />
@@ -841,7 +848,7 @@
             <div class="contact-form__textarea-wrap">
               <label for="add-Data">Дополнительно</label>
               <textarea
-                name="addData"
+                name="user_message"
                 id="add-Data"
                 cols="30"
                 rows="10"
@@ -865,7 +872,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrap">
-          <a href="index.html" class="footer__logo">
+          <a href="/" class="footer__logo">
             <h1 class="footer-logo">
               VLAD <span class="footer-orange-logo">PAVLOV</span>
             </h1>
@@ -936,12 +943,16 @@
     <div class="contact-form__wrap">
       <div class="contact-form__bg">
         <div class="container">
-          <form id="popup-form" action="#" method="POST" class="contact-form">
+          <form id="popup-form" class="contact-form">
             <h2>Связаться со мной</h2>
             <p class="contact-form__desc">
               Заполните форму, и я свяжусь с вами в ближайшее время
             </p>
-
+            <input
+              type="hidden"
+              name="language_version"
+              value="LanguageVersionRu"
+            />
             <div class="contact-form__input-wrap">
               <div class="contact-form__text-wrap">
                 <label for="modal-name">Имя </label>
@@ -950,6 +961,7 @@
                   type="text"
                   required
                   class="contact-form__text-input"
+                  name="user_name"
                 />
               </div>
               <div class="contact-form__text-wrap">
@@ -959,6 +971,7 @@
                   type="email"
                   required
                   class="contact-form__text-input"
+                  name="user_email"
                 />
               </div>
               <div class="contact-form__text-wrap">
@@ -968,14 +981,15 @@
                   type="tel"
                   required
                   class="contact-form__text-input"
+                  name="user_company"
                 />
               </div>
               <div class="contact-form__textarea-wrap">
                 <label for="modal-add-Data">Дополнительно</label>
                 <textarea
-                  name="modal-addData"
                   id="modal-add-Data"
                   cols="30"
+                  name="user_message"
                   rows="10"
                 ></textarea>
               </div>

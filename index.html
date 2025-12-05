@@ -290,7 +290,7 @@
 
     <header class="header">
       <div class="header__main-wrap container">
-        <a href="index.html" class="header__logo">
+        <a href="/" class="header__logo">
           <h1 class="logo-title">
             VLAD <span class="orange-logo">PAVLOV</span>
           </h1>
@@ -326,9 +326,9 @@
           >
         </div>
         <div class="header__lang-wrap">
-          <a href="./index.html" class="lang-btn active-lang"> UA </a>
-          <a href="./indexEn.html" class="lang-btn polish-lang"> ENG </a>
-          <a href="./indexRu.html" class="lang-btn polish-lang"> RU </a>
+          <a href="/" class="lang-btn active-lang"> UA </a>
+          <a href="./index-en.html" class="lang-btn polish-lang"> ENG </a>
+          <a href="./index-ru.html" class="lang-btn polish-lang"> RU </a>
         </div>
       </div>
     </header>
@@ -836,7 +836,11 @@
           <p class="contact-form__desc">
             Заповніть форму, і я звʼяжуся з вами найближчим часом
           </p>
-
+          <input
+            type="hidden"
+            name="language_version"
+            value="LanguageVersionUkr"
+          />
           <div class="contact-form__input-wrap">
             <div class="contact-form__text-wrap">
               <label for="name">Імʼя</label>
@@ -895,7 +899,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrap">
-          <a href="index.html" class="footer__logo">
+          <a href="/" class="footer__logo">
             <h1 class="footer-logo">
               VLAD <span class="footer-orange-logo">PAVLOV</span>
             </h1>
@@ -971,6 +975,11 @@
             <p class="contact-form__desc">
               Заповніть форму, і я звʼяжуся з вами найближчим часом
             </p>
+            <input
+              type="hidden"
+              name="language_version"
+              value="LanguageVersionUkr"
+            />
             <div class="contact-form__input-wrap">
               <div class="contact-form__text-wrap">
                 <label for="modal-name">Імʼя</label>
