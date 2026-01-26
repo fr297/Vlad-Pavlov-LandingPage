@@ -32,8 +32,8 @@ The goal was to create a professional online presence that builds trust and comm
 
 - HTML
 - CSS
-- less
-- gulp
+- Less
+- Gulp
 - JavaScript
 
 ---
