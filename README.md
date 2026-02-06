@@ -35,6 +35,7 @@ The goal was to create a professional online presence that builds trust and comm
 - Less
 - Gulp
 - JavaScript
+- Intersection observer
 
 ---
 
